@@ -9,12 +9,26 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
 }
 
+body {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 2;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 main {
     text-align: center;
     margin: 10%;
 }
 
-.text {
+.body {
     border: auto;
     margin-left: 200px;
     margin-right: 200px;
@@ -22,10 +36,27 @@ main {
 
 }
 
-#mainLinks {
-    margin-top: 40px
+.pageNav {
+    margin-top: 30px;
+    padding: 15px;
 }
 
-.socialMedia {
+.pageLinks {
+    margin-right:48px;
+}
+
+.pageLinks:last-of-type {
+    margin-right:0;
+}
+
+.profileNav {
     text-align: center;
+}
+
+.profileNav .profileLink {
+    margin-right: 24px;
+}
+
+.profileNav .profileLink:last-of-type{
+    margin-right: 0;
 }
